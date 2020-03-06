@@ -21,4 +21,4 @@ Instructions:
 
 After the device is initialized, you should see the motion state of the sensor under Current States.
 
-Thanks to the work of Zack Brown and Adam Kempenich. The driver is modelled after Adam's MagicHome WiFi driver on Github at https://community.hubitat.com/t/release-beta-0-7-magic-home-wifi-devices-initial-public-release/5197. Zack's Haiku Fan driver community contribution also helped. I decided to use Adam's example and keep the sensors separate from Zack's fan/light driver, however, it would be possible to combine the two.
+Thanks to the community contributions of Zack Brown and Adam Kempenich. The driver is modelled after Adam's MagicHome WiFi driver, see https://community.hubitat.com/t/release-beta-0-7-magic-home-wifi-devices-initial-public-release/5197. Zack's Haiku Fan community thread also helped, see https://community.hubitat.com/t/haiku-fan-big-ass-fans-support/7556. I decided to use Adam's example and keep the sensors separate from Zack's fan/light driver. However, it would probably be possible to integrate this with Zack's Fan driver, since I believe that the fan's simply echo the wall control's motion sensor status.
