@@ -2,11 +2,15 @@
 This driver enables a Haiku Wall Control to be used as a motion sensor. It simply polls the wall control to get the occupancy status. The polling interval can be adjusted from 10 to 60 seconds. It's being used with 3 wall controls with polling set at 30 seconds with no issues (so far) on a hub with about 50 devices and several custom drivers and apps.
 
 The wall controller allows TCP connections on IP port 31415. It responds to the following command:
+
 <Living Room Wall Control;SNSROCC;STATUS;GET>
 where "Living Room Wall Control" must exactly match the device Name shown in the Haiku phone app under Rooms and Devices.
+
 There are one of two responses:
+
 (Living Room Wall Control;SNSROCC;STATUS;UNOCCUPIED)
 when the motion sensor is inactive, and
+
 (Living Room Wall Control;SNSROCC;STATUS;OCCUPIED)
 when the motion sensor has been triggered as active. Once triggered the status continues to be reported as OCCUPIED for five minutes after the motion is no longer active.
 
